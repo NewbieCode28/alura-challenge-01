@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f5fc;
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Default margin for mobile */
+}
+
+.container {
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* text-align: center; */
+    width: 90%;
+    max-width: 400px;
+}
+
+input[type="text"], #resultado {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.bold {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.msgError {
+    text-align: center
+}
+
+#resultado { 
+    font-size: 24px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px; 
+    padding: 40px; 
+    background-color: #fff; 
+    display: flex; /* Activa el modo Flexbox */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Asegura que el texto también esté centrado */
+}
+
+.mensajeError {
+    font-size: 24;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#inputTexto {
+    background-color: transparent;
+    font-size: 32px;
+    border: none; 
+    padding: 10px;
+}
+
+#encriptarBtn {
+    height: 70px;
+    background-color: #0A3871;
+    color: white;
+    border-radius: 20px;
+}
+
+#desencriptarBtn {
+    height: 70px;
+    border-radius: 20px;
+    background-color: #f3f5fc;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+}
+
+#copiarBtn {
+    height: 70px;
+    width:300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    margin-top: 40px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Tablet Styles */
+@media (min-width: 600px) {
+    #logo {
+        left: 20px; /* Increase margin-left for tablet */
+    }
+    
+    .buttons {
+        flex-direction: row;
+    }
+    
+    button {
+        flex: 1;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    #logo {
+        left: 30px; /* Increase margin-left further for desktop */
+    }
+    
+    .container {
+        width: 60%;
+        max-width: 600px;
+    }
+}
